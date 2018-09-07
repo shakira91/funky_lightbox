@@ -25,6 +25,8 @@ img {
 #container {
     height: 2000px;
     width: 80%;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 4px;
     margin: 0 auto;
     text-align: center;
     opacity: 0;
@@ -34,14 +36,30 @@ img {
     animation-fill-mode: forwards;
 }
 
-main {
-    
+#overlay {
+   background-color: #f1f1f1;
+}
+
+main p { 
+    font-size: 1.5em;
+}
+
+#thumbnails {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #thumbnails img {
     width: 200px;
-    margin-right: 10px;
+    margin-right: 10px
+}
+
+#forward, #backward {
     cursor: pointer;
+    font-size: 2em;
+    background: #171616;
+    padding: 0px 9px;
+    color: #ffffff;
 }
 
 @-webkit-keyframes fadeIn {
